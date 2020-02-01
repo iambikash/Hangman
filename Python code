@@ -15,7 +15,7 @@ print(b,end=' ')
 
 while count<6:
     try:
-        int1=str(input(print("\n Guess the word")))
+        int1=str(input("\n Guess the word"))
         for i in range(len(a)):
             if i in loop:
                 if a[i]==int1:
@@ -23,7 +23,7 @@ while count<6:
                                            
                
         if b==a:
-            print()
+            print("Yep")
             break
             
     
