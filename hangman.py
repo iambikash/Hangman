@@ -55,6 +55,8 @@ while True:
                 guesses_count += 1
                 if guesses_count == max_guess_cnt:
                     print(colored('You LOST!!!!','red'))
+                    print(colored('The correct word was {}','green').format(word_to_guess))
+                    continue
             print(''.join(word_in_screen))
         del dic[word_to_guess]
         print(colored('Do you wanna play again.','blue'))
